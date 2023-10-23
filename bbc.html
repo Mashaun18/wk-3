@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC's World</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            font-size: large;
+            height: 100px;
+            margin: 0%;
+            padding-right: 80px;
+            padding-left: 90px;
+        }
+        ul li {
+            display: flex;
+            padding-left: 36px;
+            justify-content: space-around;
+            align-items: center;   
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+        }        
+
+        nav img{
+            width: 72px;
+            height: 60px;
+        }
+        
+        .sec1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            gap: 5px;}
+
+        /* .sec1 div{border: 2px solid salmon;} */
+
+        div:nth-of-type(1){
+            grid-area: 1/1/3/5;}
+
+        div:nth-of-type(2){
+            grid-area: 3/1/5/3;}
+
+        div:nth-of-type(3){
+            grid-area: 3/3/4/4;}
+
+        div:nth-of-type(4){
+            grid-area: 4/3/5/4;}
+
+        div:nth-of-type(5){
+            grid-area: 3/4/4/5;}
+
+        div:nth-of-type(6){
+            grid-area: 4/4/5/5;}
+
+
+        .sec{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            gap: 10px;}
+
+        /* .sec p{border: 2px solid black;} */
+
+        .sec p:nth-of-type(1){
+            grid-area: 1/1/2/2;}
+
+        .sec p:nth-of-type(2){
+            grid-area: 2/1/3/2;}
+
+        .sec p:nth-of-type(3){
+            grid-area: 1/2/2/3;}
+
+        .sec p:nth-of-type(4){
+            grid-area: 2/2/3/3;}
+
+        .sec p:nth-of-type(5){
+            grid-area: 1/3/2/4;}
+
+        .sec p:nth-of-type(6){
+            grid-area: 2/3/3/4;}
+
+        .sec p:nth-of-type(7){
+            grid-area: 1/4/6/6;}
+
+        
+        .reel{
+            font-size: 36px;
+            color: white;
+        }
+        .pp{
+            font-size: 20px;
+            color: white;
+        }
+
+        .sec2{
+            background-image: url(https://images.unsplash.com/photo-1682686581264-c47e25e61d95?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            height: 70vh;
+            width: auto;
+            padding: 16px;
+        }
+
+        .span1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        button{
+            border-radius: 20px;
+            background-color: transparent;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            
+        }
+
+        .span2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 16px;
+        }
+
+    
+        .sec3{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 150px);
+            gap: 10px;
+            height: 50vh;}
+
+        /* .sec3 p{border: 2px solid black;} */
+    
+
+        .sec3 p:nth-of-type(1){
+            grid-area: 1/1/2/2;}
+
+        .sec3 p:nth-of-type(2){
+            grid-area: 2/1/3/2;}
+
+        .sec3 p:nth-of-type(3){
+            grid-area: 1/2/2/3;}
+
+        .sec3 p:nth-of-type(4){
+            grid-area: 2/2/3/3;}
+
+         .sec3 p:nth-of-type(5){
+            grid-area: 1/3/2/4;} 
+
+        .sec3 p:nth-of-type(6){
+            grid-area: 2/3/3/4;}
+
+        .divv{
+            background-color: grey;
+            font-size: 20px;
+            color: white;
+            padding: 16px;
+        }
+
+        .div1{
+            background-image:url(./media/untitled\ 1.jpg);
+            /* text-align: center; */
+            color: white;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .div2{
+            background-image:url(./media/untitled\ 4.jpg);
+            text-align: center;
+            color: white;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .div3{
+            background-image:url(./media/untitled\ 3.jpg);
+            text-align: center;
+            color: white;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .div4{
+            background-image:url(./media/untitled\ 2.jpg);
+            text-align: center;
+            color: white;
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+
+        .div{
+            background-image: url(./media/Untitled.png);
+            text-align: center;
+            position: relative;
+            color: white;
+            font-size: 24px;
+            font-weight: 200;
+            background-repeat: no-repeat;
+        }
+
+        .text{
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+        }
+        .text2{
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+        }
+        .text3{
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+        }
+        .text4{
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+        }
+        .text5{
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+        }
+
+
+
+        .p0{
+            background-image: url(./media/untitled\ 1.jpg);
+        }
+        .p1{
+            background-image: url(./media/untitled\ 2.jpg);
+        }
+        .p2{
+            background-image: url(./media/untitled\ 3.jpg);
+        }
+        .p3{
+            background-image: url(./media/untitled\ 4.jpg);
+        }
+        .p4{
+            background-image: url(./media/untitled\ 3.jpg);
+        }
+        .p5{
+            background-image: url(./media/untitled\ 1.jpg);
+        }
+
+        .ppp{
+            background-color: grey;
+            font-size: 20px;
+            color: white;
+            padding: 16px;
+        }
+
+        .p11{
+            background-image: url(./media/untitled\ 1.jpg);
+        }
+        .p12{
+            background-image: url(./media/untitled\ 2.jpg);
+        }
+        .p13{
+            background-image: url(./media/untitled\ 3.jpg);
+        }
+        .p14{
+            background-image: url(./media/untitled\ 4.jpg);
+        }
+        
+        .div100{
+            padding: 20px;
+            height: 60vh;
+            background-color: gray;
+            color: white;
+        }
+
+        .div101 ul{
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            
+        }
+
+        .div101 a{
+            color: white;
+        }
+
+        .h1{
+            width: 1px;
+            height: 50px;
+        }
+        .h2{
+            width: 1px;
+            height: 50px;
+        }
+        .h3{
+            width: 1px;
+            height: 50px;
+        }
+        .h4{
+            width: 1px;
+            height: 50px;
+        }
+        .h5{
+            width: 1px;
+            height: 50px;
+        }
+        .h6{
+            width: 1px;
+            height: 50px;
+        }
+
+        .div102{
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            
+        }
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav >
+        <ul>
+            <img src="./favicon-32x32.png" alt="BBC" width="30px" height="30px">
+            <li><a href="">Sign in</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Sport</a></li>
+            <li><a href="">Reel</a></li>
+            <li><a href="">Worklife</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Future</a></li>
+            <li><a href="">Culture</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to BBC</h1>
+<main>
+    <section class="sec1">
+    <div class="divv">Advertisement</div>
+    <div class="div"><p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam hic atque veritatis debitis.</p></div>
+    <div class="div1"><p class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ea, itaque ducimus facere, fugit!</p></div>
+    <div class="div2"><p class="text3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci praesentium voluptatibus consequatur!</p></div>
+    <div class="div3"><p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis, error consectetur esse quidem?</p></div>
+    <div class="div4"><p class="text5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur ut deserunt, obcaecati soluta.</p></div>
+</section>
+    
+
+    
+        <h2>News</h2>
+        <section class="sec">
+            <p class="p3"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur pariatur animi sequi rerum maxime, doloremque quae distinctio in, ducimus quas esse quisquam eligendi perspiciatis suscipit eaque labore blanditiis earum.</p>
+            <p class="p4"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia? Illo quod vitae, consectetur natus accusantium ullam ipsam consequatur rem exercitationem reiciendis, doloribus dolorum aliquid, eaque tempora reprehenderit quisquam ad.</p>
+            <p class="p5"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis corporis id doloremque, neque facilis, aliquam nostrum eligendi perspiciatis magnam repellat aspernatur amet est, assumenda eaque hic eius commodi. At!</p>
+            <p class="ppp">Advertisement</p>
+                <p class="p0"></p>
+                <p class="p1"></p>
+                <p class="p2"></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur eos id ad! Aliquid suscipit nesciunt eius eos, earum debitis dolores. Velit quae minima et esse odit rem debitis ipsa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cum porro quae iure nesciunt perspiciatis dignissimos aut deserunt sed iste doloremque accusamus facere minus, earum voluptas accusantium fuga, totam omnis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus esse, temporibus aut nemo doloremque eligendi, consequatur asperiores quaerat sapiente dolorem assumenda optio dolore enim sit, natus accusantium dolores omnis.</p>
+        </section>
+
+        <section class="sec2">
+            <span class="span1">
+           <span>
+            <h2 class="reel">REEL</h2>
+            <p class="pp">The most amazing video from BBC</p>
+           </span>
+           <button>Vist Reel</button>
+        </span>
+
+        <span class="span2">
+            <span>
+                <img src="https://images.unsplash.com/photo-1682686581264-c47e25e61d95?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="desert man" width="350px" height="350px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </span>
+            <span>
+                <img src="https://images.unsplash.com/photo-1682686581264-c47e25e61d95?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="desert man" width="350px" height="350px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </span>
+            <span>
+                <img src="https://images.unsplash.com/photo-1682686581264-c47e25e61d95?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="desert man" width="350px" height="350px">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </span> 
+        </span>
+           
+        </section>
+    <h2>African News</h2>
+    <section class="sec3">
+        <p class="p11"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsam dolores et accusantium eius in officiis soluta, exercitationem vel ab saepe molestias fugit alias quos culpa nisi? Dolores, excepturi velit!</p>
+        <p class="p12"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi praesentium deleniti dolores provident ipsam cumque commodi non repellat aperiam. Velit quaerat vitae libero itaque nobis vero placeat rerum quasi sequi!</p>
+        <p class="p13"></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium rerum ipsum quae. Quis atque soluta consectetur non error eligendi rerum dolores fugiat dolorum nihil, unde, asperiores, quisquam vitae laborum delectus?</p>
+        <p class="p14"></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum ut quae tenetur, amet expedita fugit dicta consectetur ex libero necessitatibus neque eligendi quaerat nulla reprehenderit mollitia veniam. Ipsa, commodi.</p>
+
+
+
+    </section>
+</main>
+
+<footer>
+    <div class="div100">
+        <p>Explore the BBC</p>
+        <div class="div101"><ul>
+            <li><a href="">Home</a></li>
+            <hr class="h1">
+            <li><a href="">News</a></li>
+            <hr class="h2">
+            <li><a href="">Sport</a></li>
+            <hr class="h3">
+            <li><a href="">Reel</a></li>
+            <hr class="h4">
+            <li><a href="">Worklife</a></li>
+           <hr class="h5">
+            <li><a href="">Travel</a></li>
+            <hr class="h6">
+        </ul><div class="div102">
+            <span><a href="">Future</a></span>
+            <span><a href="">Culture</a></span>
+            <span><a href="">TV</a></span>
+            <span><a href="">Weather</a></span>
+            <span><a href="">Sounds</a></span>
+        </div></div>
+    </div>
+</footer>
+
+</body>
+</html>
